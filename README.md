@@ -1,7 +1,10 @@
 # andes-photocentric
 A Jekyll theme where photos are the content, and text is secondary.
 
+### [You can see a sample of this theme at my personal blog](https://andrew-max.github.io)
+
 My personal recommendation is, if you want to use this theme, to use it by cloning or forking and customizing from there. At the bottom of the Readme is a gem installation method. I think this might be more difficult to work with but feel free to give it a try.
+
 
 ## Dependencies
 
