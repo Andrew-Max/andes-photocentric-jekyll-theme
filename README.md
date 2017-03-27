@@ -50,12 +50,7 @@ images:
     id: 1
 ---
 ```
-
-Note that the front matter must start and end with ```
-
-The images asssume an amazon s3 bucket (or similiar, ie other host or cdn) with a specific directory structure
-
-Each Bucket should contain two subdirectories
+Note that the front matter must start and end with ```. The images asssume an amazon s3 bucket (or similiar, ie other host or cdn) with a specific directory structure. Each Bucket should contain two subdirectories
 
 `full` - the large photos that get displayed when you click on a photo
 
@@ -71,9 +66,7 @@ In both `full` and `thumb` there should be three subdirectories:
 
 `pano`
 
-Inside of these directories should be numbered photos starting at 1 ie `1.jpg`
-
-so in the images section
+Inside of these directories should be numbered photos starting at 1 ie `1.jpg`. So in the images section
 
 ```
   - type: horizontal
