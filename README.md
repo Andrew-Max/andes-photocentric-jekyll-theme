@@ -56,17 +56,25 @@ Note that the front matter must start and end with ```
 The images asssume an amazon s3 bucket (or similiar, ie other host or cdn) with a specific directory structure
 
 Each Bucket should contain two subdirectories
+
 `full` - the large photos that get displayed when you click on a photo
+
 `thumb` - the thumbs that get displayed on the photo wall
+
 also at this level should be an image called `cover.jpg` which will be the preview image for this album
 
 In both `full` and `thumb` there should be three subdirectories:
+
 `horizontal`
+
 `vertical`
+
 `pano`
+
 Inside of these directories should be numbered photos starting at 1 ie `1.jpg`
 
 so in the images section
+
 ```
   - type: horizontal
     id: 1
@@ -79,14 +87,13 @@ All that should be needed to generate the photo wall is in the front matter: a l
 
 Check out the sample post in `_posts` for a working example of what all of this looks like
 
-
 ## Prepping photos locally
+
 One final note here is that becuase this relies on a very specific directory structure for your hosted photos, it's almost necessary to replicate that structure locally before uploading
 
 In the _scripts folder I have included two scripts which help automate prepping the photos.
 
 The first step is to create the directory where you want to hold your photos locally, go there, and run the `init_blog_post_structure.sh` file. This will create the directories you need.
-
 
 Next, fill it with photos(landscapes in the horizontal, portraits in vertical, panos in pano) and run the `setup_blog_pics.sh` script. This will resize and redistribute your photos to the proper directories and make sure they have the proper names.
 
