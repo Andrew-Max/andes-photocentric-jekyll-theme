@@ -1,6 +1,8 @@
 # andes-photocentric
 A Jekyll theme where photos are the content, and text is secondary.
 
+My personal recommendation is, if you want to use this theme, to use it by cloning or forking and customizing from there. At the bottom of the Readme is a gem installation method. I think this might be more difficult to work with but feel free to give it a try.
+
 ## Dependencies
 
 ### Ruby and Ruby Gems
@@ -48,7 +50,7 @@ images:
 
 Note that the front matter must start and end with ```
 
-The images asssume an amazon s3 bucket with a specific directory structure
+The images asssume an amazon s3 bucket (or similiar, ie other host or cdn) with a specific directory structure
 
 Each Bucket should contain two subdirectories
 `full` - the large photos that get displayed when you click on a photo
@@ -70,8 +72,10 @@ on the photo wall routes to s3-base/thumb/horizontal/1.jpg
 
 and when you click on that photo, the link will be to s3-base/full/horizontal/1.jpg
 
+=============================================================================================
+=============================================================================================
 
-## Installation
+## Less Preffered Gem Installation Method
 
 Add this line to your Jekyll site's Gemfile:
 
