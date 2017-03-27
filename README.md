@@ -91,6 +91,7 @@ The first step is to create the directory where you want to hold your photos loc
 Next, fill it with photos(landscapes in the horizontal, portraits in vertical, panos in pano) and run the `setup_blog_pics.sh` script. This will resize and redistribute your photos to the proper directories and make sure they have the proper names.
 
 My goal in the future is to write a node script to automate the upload of this structure to s3 but for now I do that by hand. Please submit a pr if you are interested.
+
 =============================================================================================
 =============================================================================================
 
