@@ -72,6 +72,22 @@ on the photo wall routes to s3-base/thumb/horizontal/1.jpg
 
 and when you click on that photo, the link will be to s3-base/full/horizontal/1.jpg
 
+All that should be needed to generate the photo wall is in the front matter: a layout type of post, the correct image bucket configuration and the images. You can change the order of the images to change the order they display in and improve the photo wall layout.
+
+Check out the sample post in `_posts` for a working example of what all of this looks like
+
+
+## Prepping photos locally
+One final note here is that becuase this relies on a very specific directory structure for your hosted photos, it's almost necessary to replicate that structure locally before uploading
+
+In the _scripts folder I have included two scripts which help automate prepping the photos.
+
+The first step is to create the directory where you want to hold your photos locally, go there, and run the `init_blog_post_structure.sh` file. This will create the directories you need.
+
+
+Next, fill it with photos(landscapes in the horizontal, portraits in vertical, panos in pano) and run the `setup_blog_pics.sh` script. This will resize and redistribute your photos to the proper directories and make sure they have the proper names.
+
+My goal in the future is to write a node script to automate the upload of this structure to s3 but for now I do that by hand. Please submit a pr if you are interested.
 =============================================================================================
 =============================================================================================
 
