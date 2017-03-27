@@ -1,5 +1,5 @@
 # andes-photocentric
-A Jekyll theme where photos are the content, and text is secondary.
+### A Jekyll theme where photos are the content, and text is secondary.
 
 ### [You can see a sample of this theme at my personal blog](https://andrew-max.github.io)
 
